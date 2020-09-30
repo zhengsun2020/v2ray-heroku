@@ -1,14 +1,14 @@
 {
-    "name": "V2Ray",
-    "description": "Deploy V2ray on Heroku.",
-    "keywords": ["V2Ray"],
+    "name": "zhengsun2020",
+    "description": "Deploy zhengsun2020 on Heroku.",
+    "keywords": ["zhengsun2020"],
     "env": {
         "UUID": {
-            "description": "V2Ray UUID",
+            "description": "zhengsun2020 UUID",
             "value": "41d793fa-95ec-4b63-a067-ccf650d1ee7c"
         }
     },
-    "website": "https://ibcl.us/Heroku-V2Ray_20191014/",
-    "repository": "https://github.com/bclswl0827/v2ray-heroku",
+    "website": "",
+    "repository": "https://github.com/zhengsun2020/zhengsun2020h",
     "stack": "container"
 }
