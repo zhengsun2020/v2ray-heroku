@@ -49,7 +49,7 @@ cat << EOF > /usr/local/etc/v/c.json
     ]
 }
 EOF
-echo $PORT
+
 
 # Run V2Ray
 
