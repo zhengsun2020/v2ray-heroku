@@ -1,14 +1,0 @@
-
-À?
-&v2ray.core.app.proxyman.ReceiverConfig
-Ò	Ò	"*	websocket}
-%v2ray.core.proxy.vmess.inbound.ConfigT
-PN
-v2ray.core.proxy.vmess.Account,
-$41d793fa-95ec-4b63-a067-ccf650d1ee7c@ K&
-$v2ray.core.app.proxyman.SenderConfig!
-v2ray.core.proxy.freedom.Config"!
-v2ray.core.app.log.Config""
- v2ray.core.app.dispatcher.Config"'
-%v2ray.core.app.proxyman.InboundConfig"(
-&v2ray.core.app.proxyman.OutboundConfig
