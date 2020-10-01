@@ -2,12 +2,7 @@
     "name": "zhengsun2020",
     "description": "Deploy zhengsun2020 on Heroku.",
     "keywords": ["zhengsun2020"],
--    "env": {
-//        "ID": {
-//            "description": "zhengsun2020 ID",
-//            "value": "41d793fa-95ec-4b63-a067-ccf650d1ee7c"
-//        }
-//    },
+
     "website": "",
     "repository": "https://github.com/zhengsun2020/zhengsun2020hero",
     "stack": "container"
