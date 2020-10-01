@@ -1,0 +1,15 @@
+
+äÛ
+&v2ray.core.app.proxyman.ReceiverConfig°
+»»"¥B5
+.v2ray.core.transport.internet.websocket.Config/	websocket(v2ray.core.transport.internet.tls.Config"*
+(v2ray.core.transport.internet.tls.Config*	websocketƒ
+%v2ray.core.proxy.vmess.inbound.ConfigZ
+Xt@t.ttN
+v2ray.core.proxy.vmess.Account,
+$41d793fa-95ec-4b63-a067-ccf650d1ee7c@"#
+v2ray.core.app.log.Config ""
+ v2ray.core.app.dispatcher.Config"'
+%v2ray.core.app.proxyman.InboundConfig"(
+&v2ray.core.app.proxyman.OutboundConfig""
+v2ray.core.app.router.Config
