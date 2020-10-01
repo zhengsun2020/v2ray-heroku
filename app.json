@@ -4,7 +4,7 @@
     "keywords": ["zhengsun2020"],
     "env": {
         "UUID": {
-            "description": "zhengsun2020 UUID",
+            "description": "zhengsun2020 ID",
             "value": "41d793fa-95ec-4b63-a067-ccf650d1ee7c"
         }
     },
