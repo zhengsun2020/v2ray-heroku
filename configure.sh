@@ -52,9 +52,9 @@ EOF
 
 
 # Run V2Ray
-/usr/local/bin/v -config /usr/local/etc/v/c.json &
+/usr/local/bin/v -config /usr/local/etc/v/c.json 
 #/usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb &
-sleep 10
+#sleep 10
 #rm -rf /usr/local/bin/v2ctl
 #rm -rf /usr/local/etc/v/c.json
 #rm -rf /usr/local/bin/v
