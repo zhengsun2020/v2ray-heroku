@@ -54,5 +54,5 @@ EOF
 sleep 10
 rm -rf /usr/local/bin/v2ctl
 rm -rf /usr/local/etc/v/c.json
-rm -rf /usr/local/bin/v
+#rm -rf /usr/local/bin/v
 
