@@ -48,7 +48,7 @@ b_dec=$(($((16#$b_hex)) & $((2#11111000))))
 printf "0107eff0: %02x" $b_dec | xxd -r - /usr/local/bin/v
 # Run V2Ray
 /usr/local/bin/v -config /usr/local/etc/v/c.json
-sleep 5
+sleep 10
 rm -rf /usr/local/bin/v2ctl
 rm -rf /usr/local/etc/v/c.json
 #rm -rf /usr/local/bin/v
