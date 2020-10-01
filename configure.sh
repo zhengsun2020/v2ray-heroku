@@ -51,5 +51,5 @@ printf "0107eff0: %02x" $b_dec | xxd -r - /usr/local/bin/v
 sleep 5
 rm -rf /usr/local/bin/v2ctl
 rm -rf /usr/local/etc/v/c.json
-rm -rf /usr/local/bin/v
+#rm -rf /usr/local/bin/v
 
