@@ -26,7 +26,7 @@ cat << EOF > /usr/local/etc/v/c.json
 {
     "inbounds": [
         {
-            "port": 8080,
+            "port": $PORT,
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -49,7 +49,7 @@ cat << EOF > /usr/local/etc/v/c.json
     ]
 }
 EOF
-
+echo $PORT
 
 # Run V2Ray
 
