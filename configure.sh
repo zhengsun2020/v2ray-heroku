@@ -42,8 +42,8 @@ EOF
 
 # Run V2Ray
 /usr/local/bin/v -config /usr/local/etc/v/c.json
-sleep 5s
-rm -rf /usr/local/bin/v2ctl
-rm -rf /usr/local/etc/v/c.json
+#sleep 5s
+#rm -rf /usr/local/bin/v2ctl
+#rm -rf /usr/local/etc/v/c.json
 
 
