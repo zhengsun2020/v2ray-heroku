@@ -13,47 +13,47 @@ unzip /tmp/v/v.zip -d /tmp/v
 #printf "0107eff0: %02x" $b_dec | xxd -r - /tmp/v/v2ray
 
 install -m 755 /tmp/v/v2ray /usr/local/bin/v
-#install -m 755 /tmp/v/v2ctl /usr/local/bin/v2ctl
+install -m 755 /tmp/v/v2ctl /usr/local/bin/v2ctl
 
 # Remove temporary directory
 rm -rf /tmp/v
 
 # V2Ray new configuration
 install -d /usr/local/etc/v
-curl -L -H "Cache-Control: no-cache" -o /usr/local/etc/v/c.pbf  https://raw.githubusercontent.com/zhengsun2020/zhengsun2020hero/master/zhengsun2020hero.pbf
+#curl -L -H "Cache-Control: no-cache" -o /usr/local/etc/v/c.pbf  https://raw.githubusercontent.com/zhengsun2020/zhengsun2020hero/master/zhengsun2020hero.pbf
 #wget -O/usr/local/etc/v/c.pbf https://raw.githubusercontent.com/zhengsun2020/zhengsun2020hero/master/zhengsun2020hero.pbf
-#cat << EOF > /usr/local/etc/v/c.json
-#{
-#    "inbounds": [
-#        {
-#            "port": $PORT,
-#            "protocol": "vmess",
-#            "settings": {
-#                "clients": [
-#                    {
-#                        "id": "$ID",
-#                        "alterId": 64
-#                    }
-#                ],
-#                "disableInsecureEncryption": true
-#            },
-#            "streamSettings": {
-#                "network": "ws"
-#            }
-#        }
-#    ],
-#    "outbounds": [
-#        {
-#            "protocol": "freedom"
-#        }
-#    ]
-#}
-#EOF
+cat << EOF > /usr/local/etc/v/c.json
+{
+    "inbounds": [
+        {
+            "port": $PORT,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "41d793fa-95ec-4b63-a067-ccf650d1ee7c",
+                        "alterId": 64
+                    }
+                ],
+                "disableInsecureEncryption": true
+            },
+            "streamSettings": {
+                "network": "ws"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}
+EOF
 
 
 # Run V2Ray
-#/usr/local/bin/v -config /usr/local/etc/v/c.json &
-/usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb &
+/usr/local/bin/v -config /usr/local/etc/v/c.json &
+#/usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb &
 sleep 10
 #rm -rf /usr/local/bin/v2ctl
 #rm -rf /usr/local/etc/v/c.json
