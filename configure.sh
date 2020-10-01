@@ -29,7 +29,7 @@ cat << EOF > /usr/local/etc/v/c.json
             "settings": {
                 "clients": [
                     {
-                        "id": "41d793fa-95ec-4b63-a067-ccf650d1ee7c",
+                        "id": "$ID",
                         "alterId": 64
                     }
                 ],
