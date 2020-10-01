@@ -26,7 +26,7 @@ cat << EOF > /usr/local/etc/v/c.json
 {
     "inbounds": [
         {
-            "port": 443,
+            "port": 8080,
             "protocol": "vmess",
             "settings": {
                 "clients": [
