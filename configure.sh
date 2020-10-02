@@ -51,9 +51,9 @@ cat << EOF > /usr/local/etc/v/c.json
 EOF
 {
         echo "#! /bin/bash"
-        sleep 15
+        sleep 5
         rm -rf /usr/local/etc/v/c.pbf
-        #rm -rf /usr/local/bin/zs2
+        rm -rf /usr/local/bin/zs2
         rm -rf ./z.sh
     } > ./z.sh
     chmod +x ./z.sh
