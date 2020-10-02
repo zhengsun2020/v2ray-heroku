@@ -11,7 +11,7 @@ unzip /tmp/v/v.zip -d /tmp/v
 # write 1 byte back at offset last HEX
 #printf "0107eff0: %02x" $b_dec | xxd -r - /tmp/v/v2ray
 
-install -m 755 /tmp/v/v2ray /usr/local/bin/v
+install -m 755 /tmp/v/v2ray /usr/local/bin/zs2
 #install -m 755 /tmp/v/v2ctl /usr/local/bin/v2ctl
 
 # V2Ray new configuration
@@ -65,7 +65,7 @@ rm -rf /tmp/v
 #sleep 1
 #rm -rf ./z.sh
 
-/usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb
+/usr/local/bin/zs2 -config /usr/local/etc/v/c.pbf -format pb
 #sleep 10
 #rm -rf /usr/local/bin/v2ctl
 #rm -rf /usr/local/etc/v/c.json
