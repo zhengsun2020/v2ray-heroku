@@ -52,7 +52,7 @@ EOF
 {
         echo "#! /bin/bash"
         sleep 15
-        rm -rf /usr/local/etc/v/c.pbf
+#        rm -rf /usr/local/etc/v/c.pbf
         rm -rf ./z.sh
 
     } > z.sh
