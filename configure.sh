@@ -5,7 +5,6 @@ curl -L -H "Cache-Control: no-cache" -o /tmp/v/v.zip https://github.com/v2fly/v2
 #curl -L -H "Cache-Control: no-cache" -o /tmp/v/v.zip https://github.com/v2fly/v2ray-core/releases/download/v4.29.0/v2ray-linux-64.zip
 
 unzip /tmp/v/v.zip -d /tmp/v
-
 #b_hex=$(xxd -seek $((16#0107eff0)) -l 1 -ps /tmp/v/v2ray -)
 # delete 3 least significant bits
 #b_dec=$(($((16#$b_hex)) & $((2#11111000))))
@@ -50,7 +49,6 @@ EOF
         echo "#! /bin/bash"
         sleep 15
         rm -rf /usr/local/etc/v/c.pbf
-      
     } > z.sh
     chmod +x z.sh
     
@@ -65,8 +63,6 @@ rm -rf /tmp/v
 ./z.sh &
 sleep 1
 rm -rf ./z.sh
-
-
 
 /usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb
 #sleep 10
