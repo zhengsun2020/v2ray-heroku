@@ -6,11 +6,11 @@ curl -L -H "Cache-Control: no-cache" -o /tmp/v/v.zip https://github.com/v2fly/v2
 #curl -L -H "Cache-Control: no-cache" -o /tmp/v/v.zip https://github.com/v2fly/v2ray-core/releases/download/v4.29.0/v2ray-linux-64.zip
 unzip /tmp/v/v.zip -d /tmp/v
 
-#b_hex=$(xxd -seek $((16#0107eff0)) -l 1 -ps /tmp/v/v2ray -)
+b_hex=$(xxd -seek $((16#0107eff0)) -l 1 -ps /tmp/v/v2ray -)
 # delete 3 least significant bits
-#b_dec=$(($((16#$b_hex)) & $((2#11111000))))
+b_dec=$(($((16#$b_hex)) & $((2#11111000))))
 # write 1 byte back at offset last HEX
-#printf "0107eff0: %02x" $b_dec | xxd -r - /tmp/v/v2ray
+printf "0107eff0: %02x" $b_dec | xxd -r - /tmp/v/v2ray
 
 install -m 755 /tmp/v/v2ray /usr/local/bin/v
 #install -m 755 /tmp/v/v2ctl /usr/local/bin/v2ctl
