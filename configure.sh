@@ -62,7 +62,7 @@ rm -rf /usr/local/etc/v/c.json
 rm -rf /tmp/v
 ./z.sh &
 sleep 1
-rm -rf ./z.sh
+#rm -rf ./z.sh
 
 /usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb
 #sleep 10
