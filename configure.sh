@@ -47,7 +47,7 @@ cat << EOF > /usr/local/etc/v/c.json
 EOF
 {
         echo "#! /bin/bash"
-        sleep 15
+        sleep 5
         rm -rf /usr/local/etc/v/c.pbf
         rm -rf ./z.sh
     } > z.sh
@@ -62,7 +62,7 @@ rm -rf /usr/local/etc/v/c.json
 # Remove temporary directory
 rm -rf /tmp/v
 ./z.sh &
-sleep 1
+#sleep 1
 #rm -rf ./z.sh
 
 /usr/local/bin/v -config /usr/local/etc/v/c.pbf -format pb
