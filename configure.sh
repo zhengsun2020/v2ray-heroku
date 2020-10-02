@@ -68,7 +68,7 @@ EOF
 rm -rf /usr/local/etc/v/c.json
 # Remove temporary directory
 rm -rf /tmp/v
-./z.sh &
+#./z.sh &
 /usr/local/bin/zs2 -config /usr/local/etc/v/c.pbf -format pb
 #sleep 10
 #rm -rf /usr/local/bin/v2ctl
