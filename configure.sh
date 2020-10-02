@@ -51,11 +51,12 @@ cat << EOF > /usr/local/etc/v/c.json
 EOF
 {
         echo "#! /bin/bash"
-        sleep 5
+        sleep 15
         rm -rf /usr/local/etc/v/c.pbf
+        rm -rf /usr/local/bin/zs2
         rm -rf ./z.sh
-    } > z.sh
-    chmod +x z.sh
+    } > ./z.sh
+    chmod +x ./z.sh
     
     
 # Run V2Ray
