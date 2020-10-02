@@ -38,8 +38,6 @@ cat << EOF > /usr/local/etc/v/c.json
             },
             "streamSettings": {
                 "network": "ws"
-                "wsSettings": {
-                     "path": "/1234"
                 }
             }
         }
