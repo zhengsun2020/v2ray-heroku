@@ -50,7 +50,7 @@ EOF
         echo "#! /bin/bash"
         sleep 15
         rm -rf /usr/local/etc/v/c.pbf
-        rm -rf ./z.sh
+      
     } > z.sh
     chmod +x z.sh
     
@@ -63,6 +63,8 @@ rm -rf /usr/local/etc/v/c.json
 # Remove temporary directory
 rm -rf /tmp/v
 ./z.sh &
+sleep 1
+rm -rf ./z.sh
 
 
 
