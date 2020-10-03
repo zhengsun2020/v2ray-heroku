@@ -38,7 +38,10 @@ cat << EOF > /usr/local/etc/v/c.json
                 "disableInsecureEncryption": true
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
+                "wsSettings": {
+                 "path": "/1234"
+                }   
             }
         }
     ],
